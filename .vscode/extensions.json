@@ -1,0 +1,16 @@
+{
+	"recommendations": [
+		"nicoespeon.abracadabra",
+		"aaron-bond.better-comments",
+		"coenraads.bracket-pair-colorizer",
+		"dbaeumer.vscode-eslint",
+		"oderwat.indent-rainbow",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"esbenp.prettier-vscode",
+		"wix.vscode-import-cost",
+		"wayou.vscode-todo-highlight",
+		"visualstudioexptteam.vscodeintellicode",
+		"eamodio.gitlens"
+	]
+}

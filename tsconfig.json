@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"noEmit": true,
+		"noImplicitAny": true,
+		"noUncheckedIndexedAccess": true,
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"target": "ESNext",
+		"jsx": "react",
+		"allowJs": true,
+		"typeRoots": ["node_modules/@types", "types"],
+		"resolveJsonModule": true,
+		"strictNullChecks": true,
+		"paths": {
+			"@*": ["./*"]
+		}
+	}
+}

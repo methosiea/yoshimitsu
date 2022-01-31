@@ -1,0 +1,42 @@
+{
+	"name": "yoshimitsu",
+	"workspaces": [
+		"yoshimitsu-client",
+		"yoshimitsu-server"
+	],
+	"version": "1.0.0",
+	"repository": "https://github.com/methosiea/yoshimitsu.git",
+	"author": "methosiea",
+	"license": "MIT",
+	"private": true,
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"scripts": {
+		"build": "yarn build-client && yarn build-server",
+		"build-client": "cd yoshimitsu-client && yarn build && cd ..",
+		"build-server": "cd yoshimitsu-server && yarn build && cd ..",
+		"dangerously-build": "yarn dangerously-build-client && yarn build-server",
+		"dangerously-build-client": "cd yoshimitsu-client && yarn dangerously-build && cd ..",
+		"start": "yarn start-server",
+		"start-server": "cd yoshimitsu-server && yarn start && cd ..",
+		"serve": "yarn build && yarn start",
+		"watch": "concurrently \"yarn watch-client\" \"yarn watch-server\"",
+		"watch-client": "cd yoshimitsu-client && yarn watch && cd ..",
+		"watch-server": "cd yoshimitsu-server && yarn watch && cd ..",
+		"fix": "eslint --fix \"**/*.{js,cjs,mjs,ts}\"",
+		"format": "prettier --write \"**/*.{js,cjs,mjs,ts,json}\"",
+		"lint": "eslint \"**/*.{js,cjs,mjs,ts}\""
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.10.0",
+		"@typescript-eslint/parser": "^5.10.0",
+		"concurrently": "^7.0.0",
+		"eslint": "^8.7.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"prettier": "^2.5.1",
+		"typescript": "^4.5.5"
+	}
+}

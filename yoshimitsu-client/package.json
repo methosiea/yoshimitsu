@@ -1,0 +1,37 @@
+{
+	"name": "yoshimitsu-client",
+	"version": "1.0.0",
+	"main": "lib/js/yoshimitsu-client.js",
+	"license": "MIT",
+	"private": true,
+	"sideEffects": false,
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"scripts": {
+		"typecheck": "npx tsc",
+		"dangerously-build": "yarn typecheck && npx webpack --mode=\"production\"",
+		"build": "npx webpack --mode=\"development\"",
+		"watch": "npx webpack --mode=\"development\" --watch --env=analyze=1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.16.10",
+		"@babel/preset-env": "^7.16.11",
+		"@babel/preset-typescript": "^7.16.7",
+		"@types/jquery": "^3.5.13",
+		"@types/socket.io-client": "^3.0.0",
+		"@types/ts-nameof": "^4.2.1",
+		"babel-loader": "^8.2.3",
+		"babel-plugin-ts-nameof": "^4.2.1",
+		"core-js": "^3.20.3",
+		"terser-webpack-plugin": "^5.3.0",
+		"tsconfig-paths-webpack-plugin": "^3.5.2",
+		"webpack": "^5.66.0",
+		"webpack-bundle-analyzer": "^4.5.0",
+		"webpack-cli": "^4.9.1",
+		"webpack-merge": "^5.8.0"
+	},
+	"dependencies": {
+		"socket.io-client": "^4.4.1"
+	}
+}
