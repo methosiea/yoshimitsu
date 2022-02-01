@@ -6,6 +6,14 @@ I found an exploit in the german forum software WoltLab respectively in WoltLab 
 
 This repository contains all code used to simulate the attack.
 
+## Bot
+
+The bot simulates the attack by infecting the initiator's posts with an XSS. This XSS is executed as soon as a victim opens the corresponding thread/post. Until the process restarts.
+
+Conversations, posts, IP addresses (account data, e-mails, user name and password) and browser data are read by the bot.
+
+## More
+
 For more information, see the following links:
 
 - WoltLab/WCF: https://github.com/WoltLab/WCF
