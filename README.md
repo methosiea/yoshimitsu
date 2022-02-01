@@ -20,3 +20,4 @@ For more information, see the following links:
 - WoltLab/WCF Issue "Fix stored XSS exploit": https://github.com/WoltLab/WCF/issues/4653
 - Update: WoltLab Suite 5.4.13 / 5.3.19 / 5.2.19 / 3.1.27: https://www.woltlab.com/community/thread/294290-update-woltlab-suite-5-4-13-5-3-19-5-2-19-3-1-27/
 - Update: WoltLab Suite 5.4.13 / 5.3.19 / 5.2.19 / 3.1.27: https://www.woltlab.com/community/thread/294291-update-woltlab-suite-5-4-13-5-3-19-5-2-19-3-1-27/
+- WoltLab/WCF Commit "Fix XSS vulnerability in HtmlBBCodeParser::buildBBCodeTag()": https://github.com/WoltLab/WCF/commit/4b15b919f344066c94af401a2bbb293a30d5baa1
